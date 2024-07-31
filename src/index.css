@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "farsi";
+  src: url("./fonts/IRANSansXMedium.ttf") format("TrueType");
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "farsi";
+}
+
+.directionDiv {
+  direction: ltr;
+}
+
+.directionDiv * {
+  direction: rtl;
+}
+
+.searchBarScroller::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+.searchBarScroller::-webkit-scrollbar-track {
+  background: #cacaca;
+  border-radius: 1rem;
+}
+
+/* Handle */
+.searchBarScroller::-webkit-scrollbar-thumb {
+  background: #838383;
+  border-radius: 1rem;
+}
+
+.searchBarScroller::-webkit-scrollbar-thumb:hover {
+  background: #7a7a7a;
+}
